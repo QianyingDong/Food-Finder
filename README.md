@@ -4,8 +4,7 @@ This is an Android application.
 The link of the introduction of this App is https://www.youtube.com/watch?v=NVwYs3rNzJk 
 Feel free to watch it :)  
 
-Because the server(firebase) has stopped, this application couldn't run now.
-
+Because the server(firebase) has stopped, this application couldn't run now. Besides, you should add your google map API key at AndroidManifest.xml and GoogleMapsActivity.java.
 
 This application runs on mobile phone and only supports Android SDK version from 21 to 28. 
 
