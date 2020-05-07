@@ -1,0 +1,126 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    tools:context="com.example.foodfinder.GoogleMapsActivity"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_container"
+        tools:context="com.example.foodfinder.GoogleMapsActivity"
+        tools:ignore="MergeRootFrame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_nearby"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/btn_find"
+                android:background="@drawable/button_circle_shape"
+                android:onClick="onClick"
+                android:text="Find Restaurant"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_find"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_circle_shape"
+                android:onClick="onClick"
+                android:text="Find Food Trails"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_3rd"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="211dp"
+                android:background="#0000FF"
+                android:onClick="onClick"
+                android:text="3rd"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_2nd"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="381dp"
+                android:background="#00FF00"
+                android:onClick="onClick"
+                android:text="2nd"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_1st"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="532dp"
+                android:background="#FF0000"
+                android:onClick="onClick"
+                android:text="1st"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-3dp"
+                android:layout_marginTop="-3dp"
+                tools:context="com.example.foodfinder.GoogleMapsActivity" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:layout_gravity="top|left"
+        android:src="@mipmap/ic_foot_foreground"
+        android:backgroundTint="@android:color/white"
+        android:scaleType="center"
+        map:maxImageSize="56dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
