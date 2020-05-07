@@ -65,6 +65,8 @@ public class GoogleMapsActivity extends FragmentActivity implements
     private Button btn1, btn2, btn3;
     private boolean isButtonShow = false;
     private String TAG = "FoodFinder";
+    private String API_KEY="YOUR_API_KEY"
+                
 
     public Set<HashMap<String, Object>> neabyRestaurant = new HashSet<>();
 
@@ -262,7 +264,7 @@ public class GoogleMapsActivity extends FragmentActivity implements
         //googleURL.append("&type=" + "cafe");
         googleURL.append("&fields= rating");
         googleURL.append("&sensor=true");
-        googleURL.append("&key=" + "AIzaSyDYHt710CQHysT4mOreQxVo0pUZLoisDHo");
+        googleURL.append("&key=" + API_KEY);
 
 
         Log.d("GoogleMapsActivity", "url = " + googleURL.toString());
@@ -279,7 +281,7 @@ public class GoogleMapsActivity extends FragmentActivity implements
         //googleURL.append("&type=" + "cafe");
         googleURL.append("&fields= rating");
         googleURL.append("&sensor=true");
-        googleURL.append("&key=" + "AIzaSyDYHt710CQHysT4mOreQxVo0pUZLoisDHo");
+        googleURL.append("&key=" + API_KEY);
 
 
         Log.d("GoogleMapsActivity", "url = " + googleURL.toString());
