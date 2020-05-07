@@ -65,7 +65,7 @@ public class GoogleMapsActivity extends FragmentActivity implements
     private Button btn1, btn2, btn3;
     private boolean isButtonShow = false;
     private String TAG = "FoodFinder";
-    private String API_KEY="YOUR_API_KEY"
+    private String API_KEY="YOUR_API_KEY"  // Add you google map API key
                 
 
     public Set<HashMap<String, Object>> neabyRestaurant = new HashSet<>();
